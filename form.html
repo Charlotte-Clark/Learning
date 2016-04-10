@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>askfj</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body class = "multiple_gradients">
+    
+    <form id = "register" method = "post">
+    <header>
+        <h1>Sign me up</h1>    
+        <p>I would like to keep in touch</p>
+    </header>
+    
+    <ul>
+        <li>
+            <label for = "register-name">My name is:</label>
+            <input type = "text" id = "register-name" name = "name" required aria-required="true">
+        </li>
+        <li>
+            <label for = "email">My email addess is:</label>
+            <input type ="email" id = "email" name = "email" required aria-required="true">
+        </li>
+        <li>
+            <label for = "url">My website is located at:</label>
+            <input type = "url" id ="url" name = "url" disabled = "true">
+        </li>
+        
+        <li>
+            <label for ="password">My password is:</label>
+            <p>(at least 6 characters)</p>
+            <input type = "password" id = "password" name = "password" required aria-required="true" required title = "blah blah blah" pattern = "\S{6,}">        
+        </li>
+        
+        <li>
+            <label for = "tel">My phone number is:</label>
+            <input type = "tel" id = "tel" name = "tel">
+        </li>
+        
+        <li>
+            <label for = "rating">On a scale of 1 to 10, my knowledge of html5 is:</label>
+            <input name = "rating"  type = "range" min = "1" max = "10" step = "1">
+            <datalist id = "rating">
+                <option value = "2" label = "2"></option>
+                <option value = "4" label = "4"></option>
+                <option value = "#6" label = "6"></option>
+                <option value = "#8" label = "8"></option>
+            
+            </datalist>
+        </li>
+        
+        <li>
+        <label for = "about">Readonly stuff</label>
+            <input type = "text" name = "about" id = "about" readonly value = "This bit can't be edited">
+        
+        </li>
+        
+        <label for = "quantity">I would like <input type = "number" min = "1" name = "quantity" id = "quantity">bags of <cite>cadbury</cite> lollies</label>
+        <li>
+            <label for = "startdate">Please send my bike on:</label>
+            <input type = "date" min = "1904-03-17" max = "2015=12-30" id = "startdate" name = "startdate" required aria-required="true">
+        </li>
+        <li>
+            <label for = "upsell">Also sign me up for :</label>
+            <input type = "checkbox" id = "upsell" name = "upsell" value = "Something">
+        </li>
+        <li>
+            <label for = "favcolor">Favorite color</label>
+            <input type = "color" list = "colors" id = "favcolor" name = "favcolor">
+            <datalist id = "colors">
+                <option value = "#0000FF" label = "blue"></option>
+                <option value = "#008000" label = "green"></option>
+                <option value = "#ff0000" label = "red"></option>
+                <option value = "#663399" label = "RepeccaPurple"></option>
+            
+            </datalist>
+            
+            <br>
+        
+            <form id = "search" method = "get">
+            <label for = "s">Search</label>
+            <input type = "search" id = "s" name = "s">
+            <input type = "submit" value = "Search">
+            
+        </form>
+        <li>
+            <input type = "submit" id = "register-submit" value = "Send Post Haste">
+        </li>
+        
+    
+    </ul>
+    
+    
+    </form>
+
+</body>
+</html>

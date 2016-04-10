@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hamburger</title>
+ 
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,100' rel='stylesheet' type='text/css'>
+        
+        <style>
+            
+            // CROSS
+.cross span {
+  // Phase 2 - OUT
+  -webkit-transition: -webkit-transform 0.35s ease-out 0s, opacity 0.35s ease-out 0.35s, top 0.35s ease-out 0.35s;
+  -moz-transition: -webkit-transform 0.35s ease-out 0s, opacity 0.35s ease-out 0.35s, top 0.35s ease-out 0.35s;
+  -o-transition: -webkit-transform 0.35s ease-out 0s, opacity 0.35s ease-out 0.35s, top 0.35s ease-out 0.35s;
+  transition: -webkit-transform 0.35s ease-out 0s, opacity 0.35s ease-out 0.35s, top 0.35s ease-out 0.35s;
+}
+.cross:hover {  
+  
+    -webkit-transition: top 0.35s ease-out 0s, opacity 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0.35s;
+    -moz-transition: top 0.35s ease-out 0s, opacity 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0.35s;
+    -o-transition: top 0.35s ease-out 0s, opacity 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0.35s;
+    transition: top 0.35s ease-out 0s, opacity 0.35s ease-out 0s, -webkit-transform 0.35s ease-out 0.35s;
+    &.top {
+      top:18px;      
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &.bottom {
+      top:18px;      
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &.middle {
+      opacity:0;      
+    }
+  }
+}
+        
+        
+        </style>
+        
+        </head>
+        <body>
+        <div class="cross">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+</body>
+</html>
